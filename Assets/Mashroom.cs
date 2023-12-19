@@ -15,10 +15,21 @@ public class Mashroom : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+
+
+        if (HealthManager.health < 5)
         {
-            HealthManager.health++;
-            Destroy(gameObject);
+                if (other.CompareTag("Player"))
+                {
+                    HealthManager.health++;
+                    Destroy(gameObject);
+                }
         }
+        else
+        {
+         Physics2D.IgnoreLayerCollision(6, 10);
+        }
+
+
     }
 }

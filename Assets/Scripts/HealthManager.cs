@@ -23,7 +23,7 @@ public class HealthManager : MonoBehaviour
         {
             img.sprite = emptyHearth;
         }
-        for (int i = 0; i < health; i++)
+        for (int i = 0; i < health ; i++)
         {
             hearts[i].sprite = fullHearth;
         }
