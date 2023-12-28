@@ -55,9 +55,13 @@ public class movement : MonoBehaviour
             transform.Rotate(0, 180, 0);
         }
 
-        //animator içene y velocity sini koymak için
+        //animator içine y velocity sini koymak için
         animator.SetFloat("yVelocity", rb.velocity.y);
 
+        if(rb.velocity.y < -0.1)
+        {
+            animator.SetBool("isJumping", true);
+        }
 
 
     }

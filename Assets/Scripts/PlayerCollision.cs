@@ -76,7 +76,7 @@ public class PlayerCollision : MonoBehaviour
     private void Die()
     {
         DeadCheck= true;
-        animator.SetBool("Death", DeadCheck);
+        animator.SetTrigger("Die");
         Debug.Log("I'm finaly working!");
         rb.bodyType = RigidbodyType2D.Static; 
     }
