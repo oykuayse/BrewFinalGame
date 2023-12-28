@@ -92,10 +92,10 @@ public class movement : MonoBehaviour
 
 
 
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize);
-    //}
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize);
+    }
 
 
 }

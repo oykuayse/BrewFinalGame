@@ -26,15 +26,15 @@ public class PlayerCollision : MonoBehaviour
             if (HealthManager.health <= 0)
             {
                 
-                StartCoroutine(GetHurt(0.5f));
-                StartCoroutine(GameOverDelay(0.5f));
+                StartCoroutine(GetHurt(0.8f));
+                StartCoroutine(GameOverDelay(0.8f));
                 
             }
             else
             {
                 
-                StartCoroutine(GetHurt(0.5f));
-                StartCoroutine(RespawnAfterDelay(0.5f));
+                StartCoroutine(GetHurt(0.8f));
+                StartCoroutine(RespawnAfterDelay(0.8f));
                 
             }
         }
