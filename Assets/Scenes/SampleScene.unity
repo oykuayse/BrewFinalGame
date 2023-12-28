@@ -750,7 +750,7 @@ Transform:
   m_GameObject: {fileID: 70798085}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.395, y: -1.087, z: 0}
+  m_LocalPosition: {x: 34.42, y: -6.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19034,7 +19034,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnpoint: {fileID: 70798086}
-  animator2: {fileID: 1579829136}
+  animator: {fileID: 1579829136}
+  DeadCheck: 0
 --- !u!114 &1579829139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21746,9 +21747,9 @@ RectTransform:
   - {fileID: 1042511003}
   m_Father: {fileID: 1367416350}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -490, y: 240}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 32.4, y: -35.8}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1767507158

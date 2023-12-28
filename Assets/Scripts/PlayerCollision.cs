@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 public class PlayerCollision : MonoBehaviour
 {
     public Transform spawnpoint;
-    public Animator animator2;
+    public Animator animator;
     private Rigidbody2D rb;
+
+    public bool DeadCheck;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        
+        rb = GetComponent<Rigidbody2D>();  
     }
 
 
@@ -63,17 +64,21 @@ public class PlayerCollision : MonoBehaviour
 
     public void Respawn()
     {
+        DeadCheck = false;
+        animator.SetBool("Death", DeadCheck);
 
-        //this.transform.position = spawnpoint.position;                             // Spawn point ile yapmaktansa scene manager ile ayný sahneyi yeniden yükledim
-                                                                                     // Bu sayede karakter öldüðünde dead animasyonu takýlý kalmýyor
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        this.transform.position = spawnpoint.position;                            // Spawn point ile yapmaktansa scene manager ile ayný sahneyi yeniden yükledim
+        rb.bodyType = RigidbodyType2D.Dynamic;                                     // Bu sayede karakter öldüðünde dead animasyonu takýlý kalmýyor
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
     }
 
     private void Die()
     {
-        rb.bodyType = RigidbodyType2D.Static;
-        animator2.SetTrigger("Death");
+        DeadCheck= true;
+        animator.SetBool("Death", DeadCheck);
+        Debug.Log("I'm finaly working!");
+        rb.bodyType = RigidbodyType2D.Static; 
     }
 
 

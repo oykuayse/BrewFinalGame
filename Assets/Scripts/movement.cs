@@ -34,7 +34,9 @@ public class movement : MonoBehaviour
       
         if (Input.GetButtonDown("Jump") && isGrounded())
         {
+            
             rb.AddForce(new Vector2(rb.velocity.x, jump));
+            animator.SetBool("isJumping", true);
         }
 
         if(horizontalMove<0 && facingRight)
@@ -52,19 +54,36 @@ public class movement : MonoBehaviour
             facingRight = !facingRight;
             transform.Rotate(0, 180, 0);
         }
+
+        //animator içene y velocity sini koymak için
+        animator.SetFloat("yVelocity", rb.velocity.y);
+
+
+
     }
 
     public bool isGrounded()
     {
         if (Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, groundLayer))
         {
+            
             return true;
+            
         }
         else
         {
+           
             return false;
         }
 
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Ground")
+        {
+            animator.SetBool("isJumping", false);
+        }
     }
 
 

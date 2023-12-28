@@ -24,7 +24,7 @@ public class Bitki : MonoBehaviour
     {
         
         float distance = Vector2.Distance(transform.position, shootingat.transform.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
         if(distance < distancePlayer)
         {
             
