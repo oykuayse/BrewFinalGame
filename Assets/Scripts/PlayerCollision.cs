@@ -39,6 +39,14 @@ public class PlayerCollision : MonoBehaviour
             }
         }
 
+        if (collision.transform.tag == "Axe")
+        {
+            GameManager.collectedSymbols++;
+            Debug.Log("Simge Toplandý. Toplanan Simgeler: ");
+
+            Destroy(collision.gameObject);
+        }
+
 
     }
 
