@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Button : MonoBehaviour
 {
-    public int Respawn2;
+    public int Level;
     void Start()
     {
         
@@ -20,7 +20,7 @@ public class Button : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(Respawn2);
+            SceneManager.LoadScene(Level);
             
         }
     }

@@ -20,7 +20,7 @@ public class MovingPlartform : MonoBehaviour
     }
 
     
-    void Update()
+    void FixedUpdate()
     {
         if (Vector2.Distance(transform.position, points[i].position) < 0.02f)
         {
@@ -34,4 +34,16 @@ public class MovingPlartform : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, points[i].position, Speed * Time.deltaTime);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        collision.transform.SetParent(transform);
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        collision.transform.SetParent(null);
+    }
+
+
 }
