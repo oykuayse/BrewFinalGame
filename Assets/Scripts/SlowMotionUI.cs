@@ -6,44 +6,44 @@ using UnityEngine.UI;
 public class SlowMotionUI : MonoBehaviour
 {
     public Slider SlowMotionBar;
-
-    public float Artý;
-    public float Eksi;
-
+    public float FillSpeed = 0.1f;  // Barýn dolma hýzý
     public float slowMotionFactor = 0.5f;
 
-
-    private void Start()
-    {
-        SlowMotionBar.value = 1f;
-    }
+    private bool isSlowingTime = false;
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Y) && SlowMotionBar.value > 0.002)
+        if (Input.GetKeyDown(KeyCode.Y))
         {
-            
+            isSlowingTime = true;
+        }
+
+        if (Input.GetKey(KeyCode.Y) && SlowMotionBar.value > 0.002f && isSlowingTime)
+        {
             ZamanBariniAzalt();
-            Debug.Log("azaltýyor");
             Time.timeScale = slowMotionFactor;
         }
         else
         {
+            isSlowingTime = false;
             Time.timeScale = 1f;
-            ZamanBariniArttýr();
-            Debug.Log("arttýrýyor");
+            ZamanBariniArttir();
         }
 
-        Time.timeScale = SlowMotionBar.value;
-
+        if (!isSlowingTime)
+        {
+            // Burada zaman yavaþlamýyorsa ve bar dolma sürecindeyse barý doldur
+            SlowMotionBar.value = Mathf.MoveTowards(SlowMotionBar.value, 1f, FillSpeed * Time.deltaTime);
+        }
     }
+
     void ZamanBariniAzalt()
     {
-        SlowMotionBar.value -= Eksi;    
+        SlowMotionBar.value -= FillSpeed * Time.deltaTime;
     }
 
-    void ZamanBariniArttýr()
+    void ZamanBariniArttir()
     {
-        SlowMotionBar.value += Artý;
+        SlowMotionBar.value += FillSpeed * Time.deltaTime;
     }
 }
