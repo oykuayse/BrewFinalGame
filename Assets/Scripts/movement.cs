@@ -38,8 +38,12 @@ public class movement : MonoBehaviour
             rb.AddForce(new Vector2(rb.velocity.x, jump));
             animator.SetBool("isJumping", true);
         }
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
 
-        if(horizontalMove<0 && facingRight)
+        if (horizontalMove<0 && facingRight)
         {
             FlipWithRotation();
         }

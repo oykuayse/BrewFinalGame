@@ -73,7 +73,7 @@ public class PlayerCollision : MonoBehaviour
     public void Respawn()
     {
         DeadCheck = false;
-        animator.SetBool("Death", DeadCheck);
+        animator.SetTrigger("Die");
 
         this.transform.position = spawnpoint.position;                            // Spawn point ile yapmaktansa scene manager ile ayný sahneyi yeniden yükledim
         rb.bodyType = RigidbodyType2D.Dynamic;                                     // Bu sayede karakter öldüðünde dead animasyonu takýlý kalmýyor
@@ -81,7 +81,7 @@ public class PlayerCollision : MonoBehaviour
 
     }
 
-    private void Die()
+    public void Die()
     {
         DeadCheck= true;
         animator.SetTrigger("Die");
