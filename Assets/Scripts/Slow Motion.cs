@@ -14,7 +14,7 @@ public class SlowMotion : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Y)) // istedðib butona atayabilirsin
+        if (Input.GetKey(KeyCode.Y)) 
         {
             Time.timeScale = slowMotionFactor;
         }

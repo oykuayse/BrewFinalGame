@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
 {
     public Image Timerasset;
     public static float timeleft;
-    public static float maxTime = 20f;
+    public static float maxTime = 80f;
 
     public Transform firepoint;
     public GameObject bullet;
