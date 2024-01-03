@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     public Image Timerasset;
-    float timeleft;
-    public float maxTime = 5f;
+    public static float timeleft;
+    public static float maxTime = 20f;
 
     public Transform firepoint;
     public GameObject bullet;

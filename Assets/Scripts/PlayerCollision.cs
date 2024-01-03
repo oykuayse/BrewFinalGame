@@ -23,6 +23,9 @@ public class PlayerCollision : MonoBehaviour
         {
             Die();
             HealthManager.health--;
+
+            Timer.timeleft = Timer.maxTime;
+
             if (HealthManager.health <= 0)
             {
                 
