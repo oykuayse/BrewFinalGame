@@ -29,7 +29,5 @@ public class GameScript : MonoBehaviour
             yield return null;
         }
 
-
-        SceneManager.LoadScene("0");
     }
 }
