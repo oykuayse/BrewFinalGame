@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SU.unity
     guid: 542b66c1d028fcd41a24a6f9b1d84da0
+  - enabled: 1
+    path: Assets/Scenes/GameOverScreen.unity
+    guid: 811e22612586475498c29ed33c538535
   m_configObjects: {}
