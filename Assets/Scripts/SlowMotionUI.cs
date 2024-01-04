@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SlowMotionUI : MonoBehaviour
 {
     public Slider SlowMotionBar;
-    public float FillSpeed = 0.1f;  // Barýn dolma hýzý
+    public float FillSpeed = 0.3f;  // Barýn dolma hýzý
     public float slowMotionFactor = 0.5f;
 
     private bool isSlowingTime = false;

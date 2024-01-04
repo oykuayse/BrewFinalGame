@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a3495759d20de418e960da6f23a0da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.1
+  delay: 0.06
   TypeSound: {fileID: 0}
   yazi: Exhausted   from   running   and   feeling   hungry,   Mia   decides   to  
     rest   in   the   shade   of   the   tree   and   eat   the   mushroom.
