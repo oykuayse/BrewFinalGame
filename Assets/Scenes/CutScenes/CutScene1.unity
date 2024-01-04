@@ -551,7 +551,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.9051, y: 274.57825}
+  m_AnchoredPosition: {x: -2.9051, y: 217}
   m_SizeDelta: {x: 985.9462, y: 53.1564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &977025339
@@ -576,7 +576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.1
   TypeSound: {fileID: 0}
-  yazi: Mia encounters a timid rabbit wandering in the forest.
+  yazi: Mia   encounters   a   timid   rabbit   wandering   in   the   forest.
 --- !u!82 &977025341
 AudioSource:
   m_ObjectHideFlags: 0
@@ -694,7 +694,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b52965d1dfbb88d40b8e49f9d4db31c7, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0

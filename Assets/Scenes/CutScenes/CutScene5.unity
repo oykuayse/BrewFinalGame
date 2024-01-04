@@ -330,7 +330,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 30}
+  m_AnchoredPosition: {x: 0, y: 92}
   m_SizeDelta: {x: 160, y: 121.100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1181862269
@@ -551,8 +551,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.4512329, y: 242.67804}
-  m_SizeDelta: {x: 1013.7566, y: 120.2285}
+  m_AnchoredPosition: {x: -0.4512329, y: 195}
+  m_SizeDelta: {x: 991.92, y: 120.2285}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1379738297
 MonoBehaviour:
@@ -602,7 +602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0.1
   TypeSound: {fileID: 0}
-  yazi: After   eating   the   mushroom,   Mia  suddenly   gets   pulled    into  
+  yazi: After   eating   the   mushroom,   Mia   suddenly   gets   pulled   into  
     a   deep   pit.
 --- !u!82 &1379738299
 AudioSource:
