@@ -5,10 +5,11 @@ using UnityEngine;
 public class AnimasyonChange : MonoBehaviour
 {
     public Animator animator;
-    public AnimationClip sapkaliKosmaAnimasyonu;
-    public AnimationClip sapkaliZiplamaAnimasyonu;
-    public AnimationClip sapkaliKosmaAnimasyon;
-    public AnimationClip sapkaliZiplamaAnimasyon;
+    public AnimationClip baloncukdusmeanim;
+    public AnimationClip baloculzýplamaanim;
+    public AnimationClip baloncukidleanim;
+    public AnimationClip baloncukkosmaanim;
+    public AnimationClip baloncukolmeanim;
 
     private AnimatorOverrideController overrideController;
 
@@ -17,8 +18,11 @@ public class AnimasyonChange : MonoBehaviour
         overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
         animator.runtimeAnimatorController = overrideController;
 
-        // Þapkalý animasyonlarý atayýn
-        overrideController["Player_Fall"] = sapkaliKosmaAnimasyonu;
-        overrideController["Player_jump"] = sapkaliZiplamaAnimasyonu;
+
+        overrideController["Player_Fall"] = baloncukdusmeanim;
+        overrideController["Player_jump"] = baloculzýplamaanim;
+        overrideController["idle_animation"] = baloncukidleanim;
+        overrideController["character_animation_deneme"] = baloncukkosmaanim;
+        overrideController["Dead_anim"] = baloncukolmeanim;
     }
 }

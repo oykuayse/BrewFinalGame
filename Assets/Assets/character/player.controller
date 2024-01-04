@@ -32,7 +32,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Baloncuk_idle_anim
+  m_Name: idle_animation 0
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -58,7 +58,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Baloncuk_fall_anim
+  m_Name: Player_Fall 0
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -218,7 +218,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Baloncuk_run_anim
+  m_Name: character_animation_deneme 0
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -244,7 +244,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Baloncuk_jump_anim
+  m_Name: Player_jump 0
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -369,7 +369,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Baloncuk_dead_anim
+  m_Name: Dead_anim 0
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -434,7 +434,7 @@ AnimatorStateMachine:
     m_Position: {x: 260, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 9059594369824129398}
-    m_Position: {x: 860, y: 330, z: 0}
+    m_Position: {x: 660, y: 290, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5071111752099379146}
     m_Position: {x: 490, y: -100, z: 0}
@@ -466,7 +466,7 @@ AnimatorStateMachine:
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 630, y: 70, z: 0}
   m_EntryPosition: {x: 250, y: 20, z: 0}
-  m_ExitPosition: {x: 880, y: 220, z: 0}
+  m_ExitPosition: {x: 940, y: 290, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 4620434237161080097}
 --- !u!1102 &5071111752099379146
